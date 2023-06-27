@@ -1,0 +1,420 @@
+:root {
+    --bs-primary: #fb8b40;
+    --bs-secondary: #a09833;
+    --bs-light: #dcd794;
+    --bs-dark: #414141;
+    --bs-gray: #999999;
+    --bg-header: #070707;
+    --bg-light: #f0ebe5;
+}
+
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+body {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--bs-dark);
+}
+
+.py-50 {
+    padding: 50px 0;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.py-130 {
+    padding: 130px 0;
+}
+
+.read-more {
+    border-bottom: 2px solid var(--bs-primary);
+    transition: all 0.3s ease;
+}
+
+.btn-link {
+    color: var(--bs-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.title {
+    position: relative;
+    font-size: 40px;
+    font-family: 'Architects Daughter';
+    color: var(--bs-primary);
+    margin: 30px 0;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 140px;
+    height: 2px;
+    background-color: #e9e1d6;
+    display: none;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 140px;
+    height: 2px;
+    background-color: #e9e1d6;
+    display: none;
+}
+.read-more:hover .btn-link {
+    color: var(--bs-secondary);
+}
+
+.read-more:hover {
+    border-bottom-color: var(--bs-secondary);
+}
+
+/* Header */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    z-index: 9;
+}
+
+header .nav {
+    border-bottom: 2px solid #736558;
+    padding-bottom: 15px;
+}
+
+.schedule a {
+    padding: 10px 15px;
+}
+
+header .nav-link:focus,
+.nav-link:hover {
+    color: var(--bs-white);
+}
+
+header .navbar-dark .navbar-nav .nav-link,
+header .navbar-dark .navbar-nav .nav-link.active {
+    font-size: 12px;
+    color: var(--bs-gray);
+    padding: 1em 0;
+}
+
+header .navbar-dark .navbar-nav .nav-link:focus,
+header .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--bs-secondary);
+}
+
+header .navbar-dark .navbar-nav .nav-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schedule {
+    margin-left: 40px;
+    background-image: url('../images/btn.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Slider */
+.slider{
+    background-image: url('../images/breadcumb2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 350px 0 20px;
+}
+.slider h2{
+    font-size: 45px;
+    font-family: 'Architects Daughter';
+}
+.slider h2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 4px;
+    background-color: #fff;
+}
+/* Remember */
+.remember-content li{
+    padding: 10px;
+    border: 2px solid #dbd1c5;
+    background-color: #e3dbd1;
+    margin-bottom: 10px;
+}
+.remember-content span{
+    font-family: 'Architects Daughter';
+    font-size: 24px;
+    background-image: url('../images/btm.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-basis: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+}
+.remember-content p{
+    flex-basis: 100%;
+}
+.remember-img{
+    padding-top: 50px;
+}
+.remember-img-content{
+    top: 51%;
+    left: 30%;
+    right: 0;
+}
+.remember-img-content h1{
+    font-family: 'Architects Daughter';
+    font-size: 30px;
+    color: var(--bs-primary);
+
+}
+.remember-img-content h2{
+    font-family: 'Architects Daughter';
+    font-size: 28px;
+    color: var(--bs-secondary);
+
+}
+/* Adversite */
+.adversite{
+    background-image: url('../images/add.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.adversite h2{
+    font-size: 45px;
+    font-family: 'Architects Daughter';
+    margin-bottom: 10px;
+}
+.adversite .read-more{
+    margin-top: 15px;
+}
+.adversite .read-more:hover{
+    border-bottom-color: var(--bs-primary);
+}
+.adversite .read-more:hover .btn-link{
+    color: var(--bs-primary);
+}
+/* Footer-top */
+.footer-top {
+    background-image: url('../images/footer-top.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+.footer-top-content {
+    padding-bottom: 50px;
+}
+
+.footer-top-content h2 {
+    color: var(--bs-secondary);
+    font-family: 'Architects Daughter';
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.footer-top-content strong {
+    margin-bottom: 20px;
+}
+
+.footer-top-content p {
+    margin: 20px 0;
+}
+
+.footer-top img:hover{
+    opacity: 0.9;
+}
+
+/* Main Footer */
+.main-footer {
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-footer h2 {
+    font-size: 24px;
+    color: var(--bs-secondary);
+    font-family: 'Architects Daughter';
+    margin-bottom: 20px;
+}
+
+.explore,
+.tweets,
+.gallery {
+    margin-bottom: 30px;
+}
+
+.explore ul {
+    list-style-image: url('../images/icon.png');
+}
+
+.explore li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+.explore a,
+.tweets a {
+    font-size: 16px;
+    color: var(--bs-dark);
+}
+
+.explore a:hover {
+    color: #000;
+}
+
+.tweets i {
+    color: var(--bs-secondary);
+}
+
+.tweets span {
+    color: var(--bs-secondary);
+}
+
+.gallery li,
+.sponsor li {
+    margin: 2px;
+}
+
+.normal-sp {
+    display: block;
+}
+
+.hover-sp {
+    display: none;
+}
+
+.sponsor li:hover .normal-sp {
+    display: none;
+}
+
+.sponsor li:hover .hover-sp {
+    display: block;
+}
+
+/* Footer Bottom */
+.footer-menu {
+    margin-bottom: 30px;
+}
+
+.footer-menu a {
+    color: #333333;
+    font-size: 16px;
+}
+
+.footer-menu a:hover {
+    color: var(--bs-secondary);
+}
+
+.footer-menu li {
+    margin: 0 5px;
+}
+
+.copyright i {
+    color: #f00;
+}
+@media (min-width: 576px) {
+    .remember-img-content h1 {
+        font-size: 45px;
+    }
+    .remember-img-content h2 {
+        font-size: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .footer-menu {
+        margin-bottom: 0;
+    }
+    .title{
+        margin: 0 0 30px;
+    }
+    .remember-img-content{
+        top: 51%;
+        right: 12%;
+    }
+    .remember-img-content h1 {
+        font-size: 30px;
+    }
+    .remember-img-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        background-color: transparent;
+        margin-top: 17px;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link,
+    header .navbar-dark .navbar-nav .nav-link.active {
+        font-family: 'Architects Daughter';
+        font-size: 22px;
+        color: var(--bs-light);
+        padding: 20px 35px;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link.active {
+        color: var(--bs-white);
+    }
+
+    header .navbar-dark .navbar-nav .nav-link:focus,
+    header .navbar-dark .navbar-nav .nav-link:hover {
+        color: var(--bs-white);
+    }
+
+    header .navbar-dark .navbar-nav .nav-item {
+        border-top: none;
+    }
+    .title::before, .title::after {
+        display: block;
+    }
+    .title{
+        margin: 0 0 60px;
+    }
+    .footer-top-content {
+        padding-bottom: 0;
+    }
+
+    .adversite p{
+        margin-right: 600px;
+    }
+    .remember-img-content h1{
+        font-size: 42px;
+    }
+    .remember-img-content h2{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title::before, .title::after {
+        width: 250px;
+    }
+}
+@media (min-width: 1400px) {
+    header .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.active {
+        padding: 20px 35px;
+    }
+}

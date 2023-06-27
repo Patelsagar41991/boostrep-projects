@@ -1,0 +1,393 @@
+:root {
+    --bs-primary: #fb8b40;
+    --bs-secondary: #a09833;
+    --bs-light: #dcd794;
+    --bs-dark: #414141;
+    --bs-gray: #999999;
+    --bg-header: #070707;
+    --bg-light: #f0ebe5;
+    --font-color: #cc9d62
+}
+
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+body {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--bs-dark);
+}
+
+.py-50 {
+    padding: 50px 0;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.title {
+    position: relative;
+    font-size: 40px;
+    font-family: 'Architects Daughter';
+    color: var(--bs-primary);
+    margin: 30px 0;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 140px;
+    height: 2px;
+    background-color: #e9e1d6;
+    display: none;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 140px;
+    height: 2px;
+    background-color: #e9e1d6;
+    display: none;
+}
+
+.read-more {
+    border-bottom: 2px solid var(--bs-primary);
+    transition: all 0.3s ease;
+}
+
+.btn-link {
+    color: var(--bs-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover .btn-link {
+    color: var(--bs-secondary);
+}
+
+.read-more:hover {
+    border-bottom-color: var(--bs-secondary);
+}
+
+/* Header */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    z-index: 9;
+}
+
+header .nav {
+    border-bottom: 2px solid #736558;
+    padding-bottom: 15px;
+}
+
+.schedule a {
+    padding: 10px 15px;
+}
+
+header .nav-link:focus,
+.nav-link:hover {
+    color: var(--bs-white);
+}
+
+header .navbar-dark .navbar-nav .nav-link,
+header .navbar-dark .navbar-nav .nav-link.active {
+    font-size: 12px;
+    color: var(--bs-gray);
+    padding: 1em 0;
+}
+
+header .navbar-dark .navbar-nav .nav-link:focus,
+header .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--bs-secondary);
+}
+
+header .navbar-dark .navbar-nav .nav-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schedule {
+    margin-left: 40px;
+    background-image: url('../images/btn.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Slider */
+.slider{
+    background-image: url('../images/breadcumb5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 350px 0 20px;
+}
+.slider h2{
+    font-size: 45px;
+    font-family: 'Architects Daughter';
+}
+.slider h2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 4px;
+    background-color: #fff;
+}
+/* Remember */
+.remember{
+    background-color: var(--bg-light);
+}
+.media{
+    margin-top: 30px;
+}
+.media i{
+    font-size: 80px;
+    color: var(--font-color);
+}
+.media-body a{
+    color: #000;
+    font-family: 'Architects Daughter';
+}
+.media-body h4{
+    margin-bottom: 30px;
+}
+.media-body h4 span{
+    background-color: var(--font-color);
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+.media-body li span{
+    color: #000;
+}
+.media-body span:hover{
+    background-color: #000;
+}
+.media-body li{
+    margin-bottom: 10px;
+}
+.media-body li img{
+    margin-right: 10px;
+}
+/* Form */
+.form-select{
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: #555555;
+    border-color: #ccc;
+    height: 50px;
+}
+.form-select:focus{
+    border-color: #ddd;
+}
+.form button{
+    background-image: url('../images/btn.png');
+    background-size: 100% 100%;
+    padding: 9px 38px;
+    font-size: 15px;
+}
+.btn:focus{
+    box-shadow: none;
+}
+/* Footer-top */
+.footer-top {
+    background-image: url('../images/footer-top.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+.footer-top-content {
+    padding-bottom: 50px;
+}
+
+.footer-top-content h2 {
+    color: var(--bs-secondary);
+    font-family: 'Architects Daughter';
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.footer-top-content strong {
+    margin-bottom: 20px;
+}
+
+.footer-top-content p {
+    margin: 20px 0;
+}
+
+.footer-top img:hover{
+    opacity: 0.9;
+}
+
+/* Main Footer */
+.main-footer {
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-footer h2 {
+    font-size: 24px;
+    color: var(--bs-secondary);
+    font-family: 'Architects Daughter';
+    margin-bottom: 20px;
+}
+
+.explore,
+.tweets,
+.gallery {
+    margin-bottom: 30px;
+}
+
+.explore ul {
+    list-style-image: url('../images/icon.png');
+}
+
+.explore li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+.explore a,
+.tweets a {
+    font-size: 16px;
+    color: var(--bs-dark);
+}
+
+.explore a:hover {
+    color: #000;
+}
+
+.tweets i {
+    color: var(--bs-secondary);
+}
+
+.tweets span {
+    color: var(--bs-secondary);
+}
+
+.gallery li,
+.sponsor li {
+    margin: 2px;
+}
+
+.normal-sp {
+    display: block;
+}
+
+.hover-sp {
+    display: none;
+}
+
+.sponsor li:hover .normal-sp {
+    display: none;
+}
+
+.sponsor li:hover .hover-sp {
+    display: block;
+}
+
+/* Footer Bottom */
+.footer-menu {
+    margin-bottom: 30px;
+}
+
+.footer-menu a {
+    color: #333333;
+    font-size: 16px;
+}
+
+.footer-menu a:hover {
+    color: var(--bs-secondary);
+}
+
+.footer-menu li {
+    margin: 0 5px;
+}
+
+.copyright i {
+    color: #f00;
+}
+@media (min-width: 768px) {
+    .footer-menu {
+        margin-bottom: 0;
+    }
+
+    .title{
+        margin: 0 0 30px;
+    }
+
+    .form .col-12{
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        background-color: transparent;
+        margin-top: 17px;
+    }
+
+    .title::before, .title::after {
+        display: block;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link,
+    header .navbar-dark .navbar-nav .nav-link.active {
+        font-family: 'Architects Daughter';
+        font-size: 22px;
+        color: var(--bs-light);
+        padding: 20px 15px;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link.active {
+        color: var(--bs-white);
+    }
+
+    header .navbar-dark .navbar-nav .nav-link:focus,
+    header .navbar-dark .navbar-nav .nav-link:hover {
+        color: var(--bs-white);
+    }
+
+    header .navbar-dark .navbar-nav .nav-item {
+        border-top: none;
+    }
+
+    .footer-top-content {
+        padding-bottom: 0;
+    }
+    .title{
+        margin: 0 0 60px;
+    }
+
+    .form .col-12{
+        padding: 0 250px;
+    }
+}
+@media (min-width: 1200px) {
+    .title::before, .title::after {
+        width: 250px;
+    }
+}
+@media (min-width: 1400px) {
+    header .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.active {
+        padding: 20px 35px;
+    }
+}

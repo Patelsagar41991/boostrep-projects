@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fevicon Icon -->
+    <link href="images/logo.png" rel="icon" type="image/png">
+
+    <!-- Font CSS -->
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom JS -->
+    <script src="js/main.js" type="text/javascript" defer></script>
+
+    <title>Otika | Admin Dashboard</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <ul class="d-flex align-items-center p-0 m-0">
+                    <li class="list-unstyled">
+                        <a class="menu" data-bs-toggle="offcanvas" href="#offcanvassidebar" role="button"
+                            aria-controls="offcanvassidebar"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#" class="expand"><i class="fa-solid fa-expand"></i></a>
+                    </li>
+                    <li class="list-unstyled d-none d-sm-block">
+                        <form class="d-flex" method="get" action="">
+                            <input class="form-control bg-transparent border-0 shadow-none" type="search"
+                                placeholder="Search" aria-label="Search" name="search">
+                            <button class="btn border-0 shadow-none bg-transparent" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-right p-0 m-0 d-flex">
+                    <li class="dropdown list-unstyled">
+                        <a class="dropdown-toggle text-decoration-none d-block" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="position-absolute badge rounded-pill fw-light bg-primary">
+                                6</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end border-0 p-0">
+                            <div class="dropdown-header d-flex justify-content-between">
+                                <span>Messages</span>
+                                <a href="#" class="text-decoration-none text-primary">Mark All As Read</a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-1.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">John Deo</div>
+                                                <div class="message-text">Please check your mail!!</div>
+                                                <div class="time text-uppercase">2 min ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-2.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">Sarah Smith</div>
+                                                <div class="message-text">Request for leave application</div>
+                                                <div class="time text-uppercase">5 min ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-3.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">Jacob Ryan</div>
+                                                <div class="message-text">Your payment invoice is generated.</div>
+                                                <div class="time text-uppercase">12 min ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-4.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">Lina Smith</div>
+                                                <div class="message-text">hii John, I have upload doc related to task.
+                                                </div>
+                                                <div class="time text-uppercase">30 min ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-5.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">Jalpa Joshi</div>
+                                                <div class="message-text">Please do as specify. Let me know if you have
+                                                    any query.</div>
+                                                <div class="time text-uppercase">1 days ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar">
+                                            <img src="images/user-2.png" class="img-fluid rounded-start" alt="user">
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-user">Sarah Smith</div>
+                                                <div class="message-text">Client Requirements</div>
+                                                <div class="time text-uppercase">2 days ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#" class="text-decoration-none text-primary">View All<i
+                                        class="fa-solid fa-angle-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown list-unstyled">
+                        <a class="dropdown-toggle text-decoration-none d-block" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end border-0 p-0">
+                            <div class="dropdown-header d-flex justify-content-between">
+                                <span>Notifications</span>
+                                <a href="#" class="text-decoration-none text-primary">Mark All As Read</a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar text-center">
+                                            <i class="fa-solid fa-code text-white"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-text"> Template update is available now! </div>
+                                                <div class="time text-uppercase">2 min ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar text-center">
+                                            <i class="fa-solid fa-user text-white"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-text">You and Dedik Sugiharto are now friends</div>
+                                                <div class="time text-uppercase">10 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar text-center">
+                                            <i class="fa-solid fa-check text-white"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-text">Kusnaedi has moved task Fix bug header to Done
+                                                </div>
+                                                <div class="time text-uppercase">12 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar text-center">
+                                            <i class="fa-solid fa-triangle-exclamation text-white"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-text">hii John, I have upload doc related to task.
+                                                </div>
+                                                <div class="time text-uppercase">17 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="card text-decoration-none rounded-0">
+                                    <div class="row align-items-center g-0 card-item">
+                                        <div class="col-2 rounded-circle dropdown-item-avatar text-center">
+                                            <i class="fa-solid fa-bell text-white"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body p-0">
+                                                <div class="message-text"> Welcome to Otika template!</div>
+                                                <div class="time text-uppercase">Yesterday</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none text-primary">View All<i
+                                        class="fa-solid fa-angle-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown list-unstyled">
+                        <a class="dropdown-toggle text-decoration-none d-block" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/user-1.png" alt="user" class="img-fluid">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="dropdownMenuLink">
+                            <li class="menu-header fw-bold text-uppercase">Hello Sarah Smith</li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user ms-1"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bolt ms-1"></i>Activities</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear ms-1"></i>Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-right-from-bracket ms-1"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Statistic -->
+    <section class="statistic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">New Booking</h5>
+                                    <h2 class="mb-3 fw-bold">258</h2>
+                                    <p class="mb-0"><span class="col-green">10% </span>Increase</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="banner-img text-end">
+                                    <img src="images/1.png" class="img-fluid" alt="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Customers</h5>
+                                    <h2 class="mb-3 fw-bold">1,287</h2>
+                                    <p class="mb-0"><span class="col-orange">09% </span>Decrease</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="banner-img text-end">
+                                    <img src="images/2.png" class="img-fluid" alt="2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">New Project</h5>
+                                    <h2 class="mb-3 fw-bold">128</h2>
+                                    <p class="mb-0"><span class="col-green">18% </span>Increase</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="banner-img text-end">
+                                    <img src="images/3.png" class="img-fluid" alt="3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Revenue</h5>
+                                    <h2 class="mb-3 fw-bold">$48,697</h2>
+                                    <p class="mb-0"><span class="col-green">42% </span>Increase</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="banner-img text-end">
+                                    <img src="images/4.png" class="img-fluid" alt="4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue chart -->
+    <div class="revenue-chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0">
+                        <div class="card-header d-sm-flex justify-content-between align-items-center">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Revenue Chart</h4>
+                            </div>
+                            <div class="card-header-action d-flex">
+                                <div class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle shadow-none text-white rounded-pill"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Options
+                                    </a>
+                                    <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-eye ms-1"></i>View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-pen-to-square ms-1"></i>Edit</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-trash-can ms-1"></i>Delete</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn text-white rounded-pill ms-1">View All</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-12 col-lg-9">
+                                    <div class="chart-box">
+                                        <div id="revenue-chart"></div>
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <i class="fa-solid fa-circle-arrow-up col-green"></i>
+                                                <h5 class="fw-bold mb-0">$675</h5>
+                                                <p class="mb-0">Weekly Earnings</p>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <i class="fa-solid fa-circle-arrow-down col-orange"></i>
+                                                <h5 class="fw-bold mb-0">$1587</h5>
+                                                <p class="mb-0">Monthly Earnings</p>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <i class="fa-solid fa-circle-arrow-up col-green"></i>
+                                                <h5 class="fw-bold mb-0">$45,965</h5>
+                                                <p class="mb-0">Yearly Earnings</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="chart-desc">
+                                        <div class="row">
+                                            <div class="col-7 mb-3">
+                                                Total customers
+                                            </div>
+                                            <div class="col-5 mb-3">
+                                                8,257 <sup class="col-green">+09%</sup>
+                                            </div>
+                                            <div class="col-7 mb-3">
+                                                Total Income
+                                            </div>
+                                            <div class="col-5 mb-3">
+                                                $9,857 <sup class="col-red">-18%</sup>
+                                            </div>
+                                            <div class="col-7 mb-3">
+                                                Project completed
+                                            </div>
+                                            <div class="col-5 mb-3">
+                                                28 <sup class="col-green">+16%</sup>
+                                            </div>
+                                            <div class="col-7 mb-3">
+                                                Total expense
+                                            </div>
+                                            <div class="col-5 mb-3">
+                                                $6,287<sup class="col-green">+09%</sup>
+                                            </div>
+                                            <div class="col-7 mb-3">
+                                                New customers
+                                            </div>
+                                            <div class="col-5 mb-3">
+                                                684 <sup class="col-green">+22%</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart -->
+    <section class="chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card border-0">
+                        <div class="card-header">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Chart</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-box">
+                                <div id="chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Chart</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-box">
+                                <div id="chart-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Chart</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-box">
+                                <div id="chart-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task -->
+    <section class="task">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0">
+                        <div class="card-header d-sm-flex justify-content-between align-items-center">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Assign Task Table</h4>
+                            </div>
+                            <form class="d-flex" method="get" action="">
+                                <input class="form-control shadow-none" type="search" placeholder="Search"
+                                    aria-label="Search" name="search">
+                                <button class="btn border-0" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass text-white"></i></button>
+                            </form>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <th>Task Name</th>
+                                            <th>Members</th>
+                                            <th>Task Status</th>
+                                            <th>Assign Date</th>
+                                            <th>Due Date</th>
+                                            <th>Priority</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Create a mobile app</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-8.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-9.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-10.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+4</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">50%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-1" role="progressbar"
+                                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2018-01-20</td>
+                                            <td>2019-05-28</td>
+                                            <td>
+                                                <div class="badge badge-1 rounded-pill">Low</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Redesign homepage</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-1.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-2.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+2</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">40%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-2" role="progressbar"
+                                                        style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2017-07-14</td>
+                                            <td>2018-07-21</td>
+                                            <td>
+                                                <div class="badge badge-2 rounded-pill">High</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Backup database</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-3.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-4.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-5.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+3</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">55%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-3" role="progressbar"
+                                                        style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2019-07-25</td>
+                                            <td>2019-08-17</td>
+                                            <td>
+                                                <div class="badge badge-3 rounded-pill">Average</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Android App</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-7.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-8.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+4</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">70%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-4" role="progressbar"
+                                                        style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2018-04-15</td>
+                                            <td>2019-07-19</td>
+                                            <td>
+                                                <div class="badge badge-1 rounded-pill">Low</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Logo Design</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-9.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-10.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-2.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+2</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">45%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-5" role="progressbar"
+                                                        style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2017-02-24</td>
+                                            <td>2018-09-06</td>
+                                            <td>
+                                                <div class="badge badge-2 rounded-pill">High</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><input class="form-check-input shadow-none"
+                                                    type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td>Ecommerce website</td>
+                                            <td>
+                                                <ul class="p-0 m-0 d-flex align-items-center">
+                                                    <li class="list-unstyled m-0">
+                                                        <img src="images/user-8.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-9.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li class="list-unstyled">
+                                                        <img src="images/user-10.png" alt="user"
+                                                            class="img-fluid rounded-circle">
+                                                    </li>
+                                                    <li>
+                                                        <span class="badge rounded-pill">+2</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="progress-text">30%</div>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar-6" role="progressbar"
+                                                        style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>2018-01-20</td>
+                                            <td>2019-05-28</td>
+                                            <td>
+                                                <div class="badge badge-3 rounded-pill">Average</div>
+                                            </td>
+                                            <td><a href="#" class="btn shadow-none">Detail</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-6">
+                <!-- Support ticket -->
+                <section class="ticket">
+                    <div class="card border-0">
+                        <div class="card-header d-sm-flex justify-content-between align-items-center">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Support Ticket</h4>
+                            </div>
+                            <form class="d-flex" method="get" action="">
+                                <input class="form-control shadow-none rounded-pill" type="search" placeholder="Search"
+                                    aria-label="Search" name="search">
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <div class="ticket-item pb-1 mb-3">
+                                <div class="ticket-item d-flex">
+                                    <div class="user">
+                                        <img src="images/user-1.png" alt="user" class="img-fluid">
+                                    </div>
+                                    <div class="ticket-item-content ms-3 flex-grow-1">
+                                        <div class="badge badge-1 rounded-pill float-end ms-3">Feature</div>
+                                        <span class="fw-bold">#89754</span>
+                                        <a href="#" class="text-decoration-none">Please add advance table</a>
+                                        <p class="my-1">Hi, can you please add new table for advan...</p>
+                                        <p class="info mb-0">Created by <span class="fw-bold me-3">John Deo</span>- 1
+                                            day ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-item pb-1 mb-3">
+                                <div class="ticket-item d-flex">
+                                    <div class="user">
+                                        <img src="images/user-2.png" alt="user" class="img-fluid">
+                                    </div>
+                                    <div class="ticket-item-content ms-3 flex-grow-1">
+                                        <div class="badge badge-2 rounded-pill float-end ms-3">Bug</div>
+                                        <span class="fw-bold">#57854</span>
+                                        <a href="#" class="text-decoration-none">Select item not working</a>
+                                        <p class="my-1">please check select item in advance form not work...</p>
+                                        <p class="info mb-0">Created by <span class="fw-bold me-3">Sarah Smith</span>- 2
+                                            day ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-item pb-1 mb-3">
+                                <div class="ticket-item d-flex">
+                                    <div class="user">
+                                        <img src="images/user-3.png" alt="user" class="img-fluid">
+                                    </div>
+                                    <div class="ticket-item-content ms-3 flex-grow-1">
+                                        <div class="badge badge-3 rounded-pill float-end ms-3">Query</div>
+                                        <span class="fw-bold">#85784</span>
+                                        <a href="#" class="text-decoration-none">Are you provide template in
+                                            Angular?</a>
+                                        <p class="my-1">can you provide template in latest angular 8.</p>
+                                        <p class="info mb-0">Created by <span class="fw-bold me-3">Ashton Cox</span>- 2
+                                            day ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-item pb-1 mb-3">
+                                <div class="ticket-item d-flex">
+                                    <div class="user">
+                                        <img src="images/user-6.png" alt="user" class="img-fluid">
+                                    </div>
+                                    <div class="ticket-item-content ms-3 flex-grow-1">
+                                        <div class="badge badge-4 rounded-pill float-end ms-3">Enhancement</div>
+                                        <span class="fw-bold">#25874</span>
+                                        <a href="#" class="text-decoration-none">About template page load speed</a>
+                                        <p class="my-1">Hi, John, can you work on increase page speed of template...</p>
+                                        <p class="info mb-0">Created by <span class="fw-bold me-3">Hasan Basri</span>- 3
+                                            day ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="text-decoration-none text-primary d-block">View All</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-12 col-xl-6">
+                <!-- Projects Payments -->
+                <section class="payment">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="title">
+                                <h4 class="fw-bold mb-0">Projects Payments</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Client Name</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Payment Method</th>
+                                            <th scope="col">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>John Doe</td>
+                                            <td>11-08-2018</td>
+                                            <td>NEFT</td>
+                                            <td>$258</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cara Stevens</td>
+                                            <td>15-07-2018</td>
+                                            <td>PayPal</td>
+                                            <td>$125</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Airi Satou</td>
+                                            <td>25-08-2018</td>
+                                            <td>RTGS</td>
+                                            <td>$287</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Angelica Ramos</td>
+                                            <td>01-05-2018</td>
+                                            <td>Cash</td>
+                                            <td>$170</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Ashton Cox</td>
+                                            <td>18-04-2018</td>
+                                            <td>NEFT</td>
+                                            <td>$970</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>John Deo</td>
+                                            <td>22-11-2018</td>
+                                            <td>PayPal</td>
+                                            <td>$854</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Hasan Basri</td>
+                                            <td>07-09-2018</td>
+                                            <td>Cash</td>
+                                            <td>$128</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white">
+        <div class="footer-content text-uppercase">
+            Copyright © 2019<i class="fa-solid fa-circle mx-2"></i>Design By <a href="#"
+                class="text-decoration-none">Ankil Gajera</a>
+        </div>
+    </footer>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start border-0" tabindex="-1"
+        id="offcanvassidebar" aria-labelledby="offcanvassidebarLabel">
+        <div class="offcanvas-header justify-content-center p-0">
+            <a class="navbar-brand p-0 m-0" href="#">
+                <img src="images/logo.png" alt="logo">
+                <span class="text-uppercase fw-bold">Otika</span>
+            </a>
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="nav flex-column p-0 m-0">
+                <li class="nav-header list-unstyled text-uppercase mt-0">Main</li>
+                <li class="nav-item p-0">
+                    <a class="nav-link active" aria-current="page" href="#"><i
+                            class="fa-solid fa-desktop"></i>Dashboard</a>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-briefcase"></i>
+                        Widgets
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Chart Widgets</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Data Widgets</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-brands fa-app-store-ios"></i>
+                        Apps
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Chat</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Portfolio</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Blog</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Calendar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-envelope"></i>
+                        Email
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Inbox</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Compose</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">read</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header list-unstyled text-uppercase">UI Elements</li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-clone"></i>
+                        Basic Components
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Alert</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Badge</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Breadcrumb</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Buttons</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Collapse</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Dropdown</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Checkbox & Radios</a>
+                        </li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">List Group</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Navbar</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Pagination</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Popover</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Progress</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Tooltip</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Flag</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-bag-shopping"></i>
+                        Advanced
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Avatar</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Card</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Modal</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Sweet Alert</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Toastr</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Empty State</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Multiple Upload</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Pricing</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-file"></i>Blank Page</a>
+                </li>
+                <li class="nav-header list-unstyled text-uppercase">Otika</li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-layer-group"></i>
+                        Forms
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Basic Form</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Advanced Form</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Editor</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Validation</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Form Wizard</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-border-all"></i>
+                        Tables
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Basic Tables</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Advanced Tables</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Datatable</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Export Table</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Footable</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Editable Table</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-chart-pie"></i>
+                        Charts
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">amChart</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">apexchart</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">eChart</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Chartjs</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Spartline</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Morris</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-feather"></i>
+                        Icons
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Font Awesome</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Material Design</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Ion Icons</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Feather Icons</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Weather Icon</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header list-unstyled text-uppercase">Media</li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-image"></i>
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Light Gallery</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Gallery 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-flag"></i>
+                        Sliders
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Bootstrap
+                                Carousel.html</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Owl Carousel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-sliders"></i>Timeline</a>
+                </li>
+                <li class="nav-header list-unstyled text-uppercase">Maps</li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-map"></i>
+                        Google Maps
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Advanced Route</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Draggable Marker</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Geocoding</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Geolocation</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Marker</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Multiple Marker</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Route</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Simple</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-location-dot"></i>Vector
+                        Map</a>
+                </li>
+                <li class="nav-header list-unstyled text-uppercase">Pages</li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-user-check"></i>
+                        Auth
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Login</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Register</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Forgot Password</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Reset Password</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i
+                            class="fa-solid fa-triangle-exclamation"></i>
+                        Errors
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">503</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">403</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">404</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">500</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-anchor"></i>
+                        Other Pages
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Create Post</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Post</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Profile</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Contact</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Invoice</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-0 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="false"><i class="fa-solid fa-angles-down"></i>
+                        Multilevel
+                    </a>
+                    <ul class="dropdown-menu position-static border-0" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Menu 1</a></li>
+                        <li><a class="dropdown-item position-relative bg-transparent" href="#">Menu 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/apexcharts.js"></script>
+    <script>
+
+        $(".expand").on("click", function () {
+            document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen()
+        });
+
+        // Revenue Chart
+        var options = {
+            series: [
+                {
+                    name: "High - 2019",
+                    data: [5, 15, 14, 36, 32, 32]
+                },
+                {
+                    name: "Low - 2019",
+                    data: [7, 11, 30, 18, 25, 13]
+                }
+            ],
+            chart: {
+                height: 230,
+                type: 'line',
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: false
+                },
+            },
+            colors: ['#6777ef', '#999B9C'],
+            dataLabels: {
+                enabled: true,
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            grid: {
+                borderColor: '#e7e7e7',
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+            },
+            yaxis: {
+                title: {
+                    text: 'Income'
+                },
+            },
+            legend: {
+                show: false
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#revenue-chart"), options);
+        chart.render();
+
+
+        // Chart
+        var options = {
+            series: [
+                {
+                    name: "Series-1",
+                    data: [31, 40, 28, 51, 22, 64, 80]
+                },
+                {
+                    name: "Series-2",
+                    data: [11, 32, 67, 32, 44, 52, 41]
+                }
+            ],
+            chart: {
+                height: 250,
+                type: 'area',
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: false
+                },
+            },
+            colors: ['#999B9C', '#4CC2B0'],
+            dataLabels: {
+                enabled: false,
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            grid: {
+                borderColor: '#e7e7e7',
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            },
+            legend: {
+                show: false
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        // Chart 2
+        var options = {
+            series: [
+                {
+                    name: "Option-1",
+                    data: [45, 52, 38, 24, 33, 26, 21, 20]
+                },
+                {
+                    name: "Option-2",
+                    data: [35, 41, 62, 42, 13, 18, 29, 37]
+                },
+                {
+                    name: "Option-3",
+                    data: [87, 57, 74, 99, 75, 38, 62, 47]
+                }
+            ],
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: false
+                },
+            },
+            colors: ['#008FFB', '#00E396', '#FEB019'],
+            dataLabels: {
+                enabled: false,
+            },
+            stroke: {
+                width: [5, 7, 5],
+                curve: 'straight',
+                dashArray: [0, 8, 5]
+            },
+            grid: {
+                borderColor: '#e7e7e7',
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+            },
+            legend: {
+                show: false
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+        chart.render();
+
+        // Chart-3
+        var options = {
+            series: [{
+                name: 'PRODUCT A',
+                data: [44, 55, 41, 67, 22, 43]
+            }, {
+                name: 'PRODUCT B',
+                data: [13, 23, 20, 8, 13, 27]
+            }, {
+                name: 'PRODUCT C',
+                data: [11, 17, 15, 15, 21, 14]
+            }],
+            chart: {
+                type: 'bar',
+                height: 250,
+                stacked: true,
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: false
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    borderRadius: 10
+                },
+            },
+            xaxis: {
+                type: 'datetime',
+                categories: ['01/01/2018 GMT', '01/02/2018 GMT', '01/03/2018 GMT', '01/04/2018 GMT',
+                    '01/05/2018 GMT', '01/06/2018 GMT'
+                ],
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-3"), options);
+        chart.render();
+
+    </script>
+</body>
+
+</html>
